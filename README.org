@@ -1,8 +1,17 @@
 # Wine-Libs
 This project is for installing Windows libraries used by Wine.
 
+# How to Use?
+first clone the repo
+#+begin_src shell
+  git clone https://github.com/barrensea/wine-libs
+#+end_src
+
+then run the script for example xact
+#+begin_src shell
+  WINEPREFIX=~/wine/test/ ./wine-libs/wine-libs.sh install 64 xact
+#+end_src
 # games
 | Game                       | Lib  | Description                |
 | The Elder Scroll V: Skyrim | xact | Fixed the problem of Sound |
-|                            |      |                            |
 
