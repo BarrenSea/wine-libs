@@ -2,7 +2,7 @@
 
 action="$1"
 arch="$2"
-librarys=("xact")
+librarys=("xact" "d3d")
 target=()
 PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 case "$action" in
