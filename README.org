@@ -11,6 +11,10 @@ then run the script for example xact
 #+begin_src shell
   WINEPREFIX=~/wine/test/ ./wine-libs/wine-libs.sh install 64 xact
 #+end_src
+# libs
+| lib  | Description      |
+| xact | directx音频处理库 |
+| d3d  | d3dx库           |
 # games
 | Game                       | Lib  | Description                |
 | The Elder Scroll V: Skyrim | xact | Fixed the problem of Sound |

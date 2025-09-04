@@ -2,10 +2,14 @@
 
 action="$1"
 arch="$2"
-librarys=("xact" "d3d")
+librarys=("xact" "d3d" "xinput")
 target=()
 PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 case "$action" in
+    list)
+	echo "${librarys[@]}"
+	exit 1
+	;;
     install)
     ;;
     uninstall)
@@ -13,6 +17,7 @@ case "$action" in
     *)
 	echo "Unrecognized action: $action"
 	echo "Usage: $0 [install|uninstall] [64/32] lib1 lib2 ..."
+	echo "Usage: $0 list"
 	exit 1
 esac
 shift
